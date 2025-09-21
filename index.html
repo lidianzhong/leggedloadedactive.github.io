@@ -9,41 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Active Dynamic Load Adaptation for Quadruped Locomotion on Complex Terrain</title>
 
-  <link rel="apple-touch-icon" sizes="57x57"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-180x180.png" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="128x128" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./static/images/icon.png" sizes="16x16" />
 
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-196x196.png"
-    sizes="196x196" />
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-192x192.png"
-    sizes="192x192" />
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-128.png" sizes="128x128" />
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="//www-media.stanford.edu/assets/favicon/favicon-16x16.png" sizes="16x16" />
-
-  <link rel="mask-icon" href="//www-media.stanford.edu/assets/favicon/safari-pinned-tab.svg" color="#ffffff">
-  <meta name="application-name" content="Stanford University" />
+  <link rel="mask-icon" href="./static/images/icon.png" color="#ffffff">
+  <meta name="application-name" content="Active Dynamic Load Adaptation" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="//www-media.stanford.edu/assets/favicon/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="//www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="//www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
-  <meta name="msapplication-square310x310logo" content="//www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
+  <meta name="msapplication-TileImage" content="./static/images/icon.png" />
+  <meta name="msapplication-square70x70logo" content="./static/images/icon.png" />
+  <meta name="msapplication-square150x150logo" content="./static/images/icon.png" />
+  <meta name="msapplication-square310x310logo" content="./static/images/icon.png" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ38WT2YPD"></script>
@@ -59,7 +38,7 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://kit.fontawesome.com/19914a84eb.js" crossorigin="anonymous"></script>
@@ -76,13 +55,13 @@
       <source src=" ./static/videos/index.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+  <!-- <div class="hero-video is-hidden-tablet is-inline-block-mobile"
     style="height: 154.28571428vw; width: 100%; min-width:64.81481481vh;min-height:100%;">
     <video playsinline autoplay muted loop>
       <source src=" ./static/videos/temp.webm" type="video/webm">
     </video>
-  </div>
-  <div class="overlay"></div>
+  </div> -->
+  <!-- <div class="overlay"></div> -->
   <!-- Hero head: will stick at the top -->
   <div class="hero-head is-hidden-mobile">
     <header class="navbar">
@@ -90,11 +69,12 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <!-- Only keep arXiv link, comment out others -->
-            <a class="navbar-item  pl-4 pr-4" href="https://arxiv.org/abs/2407.10353">
+            <span class="navbar-item  pl-4 pr-4">
               <span class="icon" style="margin-right:5px;">
-                <img src="./static/images/arxiv.svg" alt="ArXiv" />
+              <img src="./static/images/arxiv.svg" alt="ArXiv" />
               </span>
-              <span>arXiv</span> </a>
+              <span>arXiv</span>
+            </span>
             <!--
             <a class="navbar-item pl-4 pr-4" href="./static/umi-on-legs.pdf">
               <span class="icon" style="margin-right:5px;">
@@ -128,20 +108,21 @@
     <h1 class="title is-2 publication-title is-size-3-mobile" style="font-size: 3.5rem; margin-top: 16rem;">
       Active Dynamic Load Adaptation for Quadruped Locomotion on Complex Terrain
     </h1>
-    <h4 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 2.2rem;">
+    <h4 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 2.0rem;">
+      Anonymous
     </h4>
-    <div class="column has-text-centered is-hidden-tablet">
+    <!-- <div class="column has-text-centered is-hidden-tablet">
       <div class="publication-links">
-        <span class="link-block">
-          <a href="https://arxiv.org/abs/2407.10353" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <img src="./static/images/arxiv.svg" alt="ArXiv" />
-            </span>
-            <span>arXiv</span>
-          </a>
+      <span class="link-block">
+        <a class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+          <img src="./static/images/arxiv.svg" alt="ArXiv" />
         </span>
-        </div>
-    </div>
+        <span>arXiv coming soon</span>
+        </a>
+      </span>
+      </div>
+    </div> -->
   </div>
 </div>
 
@@ -177,7 +158,9 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Video</h2>
     <div class="content has-text-centered">
-      <p>Video will be added here.</p>
+      <video controls playsinline style="width:100%;">
+        <source src="./static/videos/commit_video_compressed.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -207,90 +190,90 @@
     <h3 class="title is-4">Flat</h3>
     <div class="columns is-variable is-1 is-centered">
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/mujoco_base.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_flat_base.mp4" type="video/mp4">
         </video>
         <p>BaseLine</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/mujoco_him.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_flat_him.mp4" type="video/mp4">
         </video>
         <p>HimLoco</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/mujoco_fdmidm.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_flat_fdmidm.mp4" type="video/mp4">
         </video>
         <p>Ours</p>
       </div>
     </div>
 
-    <!-- <h3 class="title is-4">Rough</h3>
+    <h3 class="title is-4">Rough</h3>
     <div class="columns is-variable is-1 is-centered">
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/rough1.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_rough_base.mp4" type="video/mp4">
         </video>
-        <p>Rough — clip 1</p>
+        <p>BaseLine</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/rough2.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_rough_him.mp4" type="video/mp4">
         </video>
-        <p>Rough — clip 2</p>
+        <p>HimLoco</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/rough3.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_rough_fdmidm.mp4" type="video/mp4">
         </video>
-        <p>Rough — clip 3</p>
+        <p>Ours</p>
       </div>
     </div>
 
     <h3 class="title is-4">Stair</h3>
     <div class="columns is-variable is-1 is-centered">
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/stair1.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_stair_base.mp4" type="video/mp4">
         </video>
-        <p>Stair — clip 1</p>
+        <p>BaseLine</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/stair2.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_stair_him.mp4" type="video/mp4">
         </video>
-        <p>Stair — clip 2</p>
+        <p>HimLoco</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/stair3.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_stair_fdmidm.mp4" type="video/mp4">
         </video>
-        <p>Stair — clip 3</p>
+        <p>Ours</p>
       </div>
     </div>
 
     <h3 class="title is-4">Slope</h3>
     <div class="columns is-variable is-1 is-centered">
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/slope1.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_slope_base.mp4" type="video/mp4">
         </video>
-        <p>Slope — clip 1</p>
+        <p>BaseLine</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/slope2.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_slope_him.mp4" type="video/mp4">
         </video>
-        <p>Slope — clip 2</p>
+        <p>HimLoco</p>
       </div>
       <div class="column is-one-third has-text-centered">
-        <video controls playsinline style="width:100%;">
-          <source src="./static/videos/slope3.mp4" type="video/mp4">
+        <video playsinline autoplay muted loop style="width:100%;">
+          <source src="./static/videos/sim_slope_fdmidm.mp4" type="video/mp4">
         </video>
-        <p>Slope — clip 3</p>
+        <p>Ours</p>
       </div>
-    </div> -->
+    </div>
 
   </div>
 </section>
@@ -303,7 +286,8 @@
       <!--
       <div class="publication-authors is-flex justify-content is-justify-content-space-around is-hidden-mobile"> ... </div>
       -->
-      <p>College of informatics, Huazhong Agriculture University</p>
+      <p>Anonymous</p>
+      <!-- <p>College of informatics, Huazhong Agriculture University</p> -->
     </div>
   </div>
 </section>
@@ -311,7 +295,7 @@
 <section class="section is-small" id="bibtex">
   <div class="container is-max-desktop">
     <h2 class="title is-4 has-text-centered is-size-5-mobile">BibTeX</h2>
-    <pre><code>@inproceedings{your2025activedynamic,
+    <pre><code>@inproceedings{2025activedynamic,
       title={Active Dynamic Load Adaptation for Quadruped Locomotion on Complex Terrain},
       author={Anonymous},
       year={2025},
